@@ -38,10 +38,10 @@
         - createuser catalog; (by default it has limited permission we can check by typing \du)
 - install git
     -  sudo apt-get install git-all
-- installing unattended-upgrades
+- installing unattended-upgrades for an auto update of ther server:
     - sudo apt-get install unattended-upgrades
     - enable it by sudo dpkg-reconfigure --priority=low unattended-upgrades
-- installing fail2ban
+- installing fail2ban to monitor unsuccessful login attempts:
     - sudo apt-get install fail2ban
     - modify configuration by copying conf file
         - sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
