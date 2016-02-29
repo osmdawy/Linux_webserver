@@ -38,7 +38,9 @@
         - createuser catalog; (by default it has limited permission we can check by typing \du)
 - install git
     -  sudo apt-get install git-all
+
 ## A list of any third-party resources to complete this project.
+
 - http://www.postgresql.org/
 - https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2
 - http://docs.sqlalchemy.org/en/latest/core/engines.html
