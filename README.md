@@ -38,7 +38,19 @@
         - createuser catalog; (by default it has limited permission we can check by typing \du)
 - install git
     -  sudo apt-get install git-all
-
+- installing unattended-upgrades
+    - sudo apt-get install unattended-upgrades
+    - enable it by sudo dpkg-reconfigure --priority=low unattended-upgrades
+- installing fail2ban
+    - sudo apt-get install fail2ban
+    - modify configuration by copying conf file
+        - sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+    - sudo nano /etc/fail2ban/jail.local
+    - adding ip address to ignore ip
+    - change destemail to my email
+    - restart the service
+    - sudo service fail2ban stop
+    - sudo service fail2ban start
 ## A list of any third-party resources to complete this project.
 
 - http://www.postgresql.org/
@@ -47,3 +59,4 @@
 - http://www.jakowicz.com/flask-apache-wsgi/
 - https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 - http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvii-deployment-on-linux-even-on-the-raspberry-pi
+- https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04
