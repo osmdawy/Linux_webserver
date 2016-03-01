@@ -51,6 +51,19 @@
     - restart the service
     - sudo service fail2ban stop
     - sudo service fail2ban start
+- Install and configure Munin to monitor server and applications:
+    - sudo apt-get install munin
+    - Uncommenting and add some neccessary lines in :  /etc/munin/munin.conf
+    - editing /etc/munin/apache.conf to reflect changes.
+    - Create the directory path referenced in the munin.conf file and modify the ownership to allow munin to write to it:
+        ``` sh
+        sudo mkdir /var/www/munin
+        sudo chown munin:munin /var/www/munin
+        ```
+    - restarting munin and apache.
+    - Using http://ec2-52-37-13-237.us-west-2.compute.amazonaws.com/munin/ I can monitor my server and appliation.
+
+        
 ## A list of any third-party resources to complete this project.
 
 - http://www.postgresql.org/
