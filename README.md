@@ -1,7 +1,7 @@
 # Project 5: Linux Webserver
 
 1. connect to the serverusing grader account:
-    ```sh
+    ```
      ssh -i ~/.ssh/grader grader@52.37.13.237 -p 2200
     ```
     - my ip address is 52.37.13.237
@@ -56,7 +56,7 @@
     - Uncommenting and add some neccessary lines in :  /etc/munin/munin.conf
     - editing /etc/munin/apache.conf to reflect changes.
     - Create the directory path referenced in the munin.conf file and modify the ownership to allow munin to write to it:
-        ``` sh
+        ```
         sudo mkdir /var/www/munin
         sudo chown munin:munin /var/www/munin
         ```
