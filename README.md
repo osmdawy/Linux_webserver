@@ -57,8 +57,9 @@
     - editing /etc/munin/apache.conf to reflect changes.
     - Create the directory path referenced in the munin.conf file and modify the ownership to allow munin to write to it:
         ```
-        sudo mkdir /var/www/munin
-        sudo chown munin:munin /var/www/munin
+        sudo mkdir /var/www/munin.
+        
+        sudo chown munin:munin /var/www/munin.
         ```
     - restarting munin and apache.
     - Using http://ec2-52-37-13-237.us-west-2.compute.amazonaws.com/munin/ I can monitor my server and appliation.
